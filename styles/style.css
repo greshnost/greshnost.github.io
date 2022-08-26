@@ -1,0 +1,119 @@
+html {
+    background-color: #ffdefa;
+    padding: 0px;
+    scroll-behavior: smooth;
+}
+body {
+    width: 80%;
+    min-height: calc(100vh - 4em);
+    margin: 0 auto;
+    padding: 2em;
+    background-color: #faedf8;
+    border-color: #ffffff;
+    border-left-style: solid;
+    border-right-style: solid;
+    border-width: 20px;
+}
+p {
+    color: #444444;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18.5pt;
+    line-height: 1.15;
+    margin: 4pt;
+}
+
+p.value {
+    margin-top: 22px;
+    margin-bottom: 22px;
+    text-indent: -16pt;
+    margin-left: 20pt;
+    font-size: 24pt;
+    line-height: 2.11666656px;
+    letter-spacing: 0.03em;
+    font-family: 'Montserrat';
+}
+
+p.axis_name {
+    margin-top: 50px;
+    color: #333333;
+    font-size: 19pt;
+    font-family: 'Montserrat';
+}
+p.question {
+    margin: 16pt auto;
+    color: #333333;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    width: 70%;
+    min-width: 500pt;
+    min-height: 144pt;
+    background-color: #faedf8;
+    padding: 16pt;
+    border-radius: 16pt;
+    font-size: 36pt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+h1 {
+    color: #222222;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 72pt;
+    text-align: center;
+    line-height: 72pt;
+    margin-top: 0pt;
+    margin-bottom: 0pt;
+}
+h2 {
+    color: #333333;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 34pt;
+    line-height: 36pt;
+    margin-top: 12pt;
+    margin-bottom: 10pt;
+}
+h3 {
+    color: #333333;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20pt;
+    text-align: center;
+    line-height: 25pt;
+    margin-top: 0pt;
+    margin-bottom: 0pt;
+}
+
+div.center {
+    background-color: #fff6f6;;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 8pt;
+    padding: 6pt;
+    color: white;
+    width: 50%;
+    min-width: 488pt;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 24pt;
+    margin: auto;
+    box-shadow: 0px 0px 10px rgba(0.5,0.5,0.5,0.5);
+
+}
+img.quadcolumn {
+    width: 23.75%;
+    transition: transform .3s;
+}
+img.quadcolumn:hover {
+    transform: scale(1.05);
+  }
+div.quadcolumn {
+    width: 23.75%;
+}
+div.axis_name {
+    color: #333333;
+    font-size: 19pt;
+    font-family: 'Montserrat';
+    display: inline-block;
+    padding-bottom: 8.65pt;
+}

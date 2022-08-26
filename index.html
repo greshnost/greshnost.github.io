@@ -1,0 +1,30 @@
+<head>
+<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Roboto:400,700" rel="stylesheet">
+<link href='styles/style.css' rel='stylesheet' type='text/css'>
+<link href="styles/buttons.css"   rel="stylesheet" type='text/css'>
+<link href="value_images/icon.png" rel="icon" type="x-icon">
+<link href="value_images/icon.png" rel="shortcut icon" type="x-icon">
+<meta charset="utf-8">
+<title>Тест нагрешность</title>
+</head>
+
+<body>
+<h1>Тест нагрешность</h1><hr>
+<div class="center">
+    <div class="axis_name quadcolumn">Грехи...</div> <br>
+    <img src="value_images/pride.svg" class="quadcolumn">
+    <img src="value_images/glut.svg" class="quadcolumn">
+    <img src="value_images/forn.svg" class="quadcolumn">
+    <img src="value_images/anger.svg" class="quadcolumn">
+    <img src="value_images/greed.svg" class="quadcolumn">
+    <img src="value_images/desp.svg" class="quadcolumn">
+    <img src="value_images/envy.svg" class="quadcolumn">
+</div><br>
+<button class="button" onclick="location.href='instructions.html';" style="font-size:36pt;">Начать тест</button>
+<br><hr>
+<h2>Че это за хуйня?</h2>
+<p>Сама в душе не чаю но я придумала <b><u><span id="numOfQuestions"></span></u></b> вопросов.</p>
+</body>
+
+<script type="application/javascript"src="scripts/questions.js"></script>
+<script type="text/javascript">document.getElementById("numOfQuestions").innerHTML = questions.length;</script>

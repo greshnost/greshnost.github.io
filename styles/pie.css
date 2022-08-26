@@ -1,0 +1,103 @@
+.disk {
+  --d: 0; 
+  position: relative; 
+  width: 510px;
+  padding: 30px 0; 
+  border-radius: 100%;
+  margin: 5% auto;
+  font: 4.0vmin monospace; 
+}
+.disk b {
+  position: absolute;
+  left: 50%;
+  width: 0;
+}
+.b1 {  
+  --deg: 0deg; 
+
+  bottom: 50%;
+  padding-bottom: 50%;
+
+  -ms-transform-origin: 0% 100%; 
+  -webkit-transform-origin: 0% 10%; 
+  transform-origin: 0% 100%;
+  -ms-transform: rotate(var(--deg)); 
+  -webkit-transform: rotate(var(--deg));
+  transform: rotate(var(--deg));
+}
+.b2 {
+  --deg: 0deg; 
+
+  top: 50%;
+  padding-top: 50%;
+
+  -ms-transform-origin: 50% 0; 
+  -webkit-transform-origin: 50% 0; 
+  transform-origin: 50% 0;
+  
+  -ms-transform: rotate(var(--deg)); 
+  -webkit-transform: rotate(var(--deg));
+  transform: rotate(var(--deg));
+}
+.line {
+  --num: 0; 
+  height: 1px;
+  background: black;
+  box-shadow: 0px 0px 8px rgba(0.5,0.5,0.5,0.5);
+  transform: rotate(calc(var(--num) * 51.4285714deg + 90deg));
+  width: 510px;
+  margin: 255 0;
+  aspect-ratio:1;
+  place-content:center;
+  position: absolute;
+}
+.pieContainer {
+  --h: 510px;
+  height: var(--h);
+  position: relative;
+}
+
+.pieBackground {
+  --r: 510px;
+  position: absolute;
+  width: var(--r);
+  height: var(--r);
+  border-radius: 100%;
+  border-color: black;
+  box-shadow: 0px 0px 8px rgba(0.5,0.5,0.5,255);
+} 
+.pie {
+  --p:14.2857;
+  --r:100px;
+  --c:darkred;
+  --w:510px;
+  --num: 0;
+  
+  width:var(--w);
+  aspect-ratio:1;
+  position:absolute;
+  display:inline-grid;
+  place-content:center;
+}
+
+.pie:before{
+  content: "";
+  position: absolute;
+  border-radius: 100%;
+  inset: 0;
+  background: conic-gradient(var(--c) calc(var(--p)*1%),#0000 0);
+  -webkit-mask:radial-gradient(farthest-side,#000 calc(var(--r)),#0000 calc(var(--r)));
+  mask:radial-gradient(farthest-side,#000 calc(var(--r)),#0000 calc(var(--r)));
+  transform: rotate(calc(var(--num) * 51.4285714deg));
+
+
+}
+.pie:after {
+  content:"";
+  position:absolute;
+  border-radius:100%;
+  
+}
+@keyframes p {
+  from{--p:0}
+}
