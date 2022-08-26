@@ -48,7 +48,7 @@ for (var i = 7; i <= 10; i++) {
     innerel.style = `--r:${radius}px;margin-left: ${margin}px;margin-top: ${margin}px;`;
 }
 // Подписать пирог 
-sins = [" Гордыня ", "Чревоугодие", "    Блуд   ", "Гнев  ", " Алчность   ", "Уныние  ", " Зависть"]
+sins = [" Гордыня ", "Чревоугодие", "    Блуд   ", "Гнев ", "  Алчность   ", "Уныние  ", " Зависть"]
 var degree = 360;
 for (var i = 0; i < sins.length; i++){
     var bigSin = sins[i];
