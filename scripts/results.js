@@ -33,45 +33,32 @@ document.getElementById("envy-label").innerHTML = `Зависть:<br>${envy}%`
 colorsList = ["purple", "darkred", "orange", "#DEC20B", "green", "darkblue", "violet"]
 radiusList = [pride, glut, forn, anger, greed, desp, envy]
 for (var i = 0; i <= 6; i++) {
-    var element_name = `${i}`;
     var color = colorsList[i];
     var radius = radiusList[i];
-    innerel = document.getElementById(element_name);
+    innerel = document.getElementById(i);
     innerel.style = `--num:${i};--c:${color};--r:${radius * 3}px`;
 }
 // Нарисовать красивые штучки
 for (var i = 7; i <= 10; i++) {
-    var element_name = `${i}`;
     var radius = (i - 6) * 100;
-    var margin = (500 - radius + 10) / 2 
-    innerel = document.getElementById(element_name);
+    var margin = (500 - radius + 10) / 2;
+    innerel = document.getElementById(i);
     innerel.style = `--r:${radius}px;margin-left: ${margin}px;margin-top: ${margin}px;`;
 }
 // Подписать пирог 
-sins = [" Гордыня ", "Чревоугодие", "    Блуд   ", "Гнев ", "  Алчность   ", "Уныние  ", " Зависть"]
-var degree = 360;
-for (var i = 0; i < sins.length; i++){
-    var bigSin = sins[i];
-    flag = (degree <= 90 || degree >= 270);
-    if (!flag) {
-        bigSin = bigSin.split('').reverse().join('');
-    }
-    for (var j = 0; j < bigSin.length; j++) {
-        var char = bigSin[j];
-        if (flag) {
-            style = `--deg: ${degree}deg;`
-            _class = "b1";
-        }
-        else {
-            style = `--deg: ${degree + 180}deg;`
-            _class = "b2";
-        }
-        document.getElementById("disk").innerHTML += `<b style="${style}" class="${_class}">${char}</b>`;
-        degree += 5;
-    }
-    degree += 5 ;
-    degree %= 360;
-}
+const sins = [" Гордыня ", "Чревоугодие", "    Блуд   ", "Гнев ", "  Алчность   ", "Уныние  ", " Зависть"]
+var degree = 0;
+sins.forEach(element => {
+    flag = (degree <= 90 || degree >= 225)
+    if (!flag) {element = element.split('').reverse().join(''); _class = "b2";}
+    else       {_class = "b1";}
+    element.split('').forEach(char => {
+        style = `--deg: ${degree + 180 * (!flag)}deg;`
+        document.getElementById("disk").innerHTML += `<b style="${style}" class="${_class}">${char}</b>`
+        degree += 5
+    })
+    degree += 5
+})
 
 // Общий результат
 total_result = Math.floor(radiusList.reduce((a, b) => +(a) + +(b), 0) / 700 * 100);
