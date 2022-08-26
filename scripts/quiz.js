@@ -87,6 +87,4 @@
             + `&desp=${calc_score(final_desp,max_desp)}`
             + `&envy=${calc_score(final_envy,max_envy)}`
         location.href = results
-        console.log(results)
-
     }
