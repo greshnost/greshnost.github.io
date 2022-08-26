@@ -47,7 +47,7 @@ p.question {
     width: 70%;
     min-width: 500pt;
     min-height: 144pt;
-    background-color: #faedf8;
+    background-color: #fff6f6;
     padding: 16pt;
     border-radius: 16pt;
     font-size: 36pt;
@@ -85,7 +85,7 @@ h3 {
 }
 
 div.center {
-    background-color: #fff6f6;;
+    background-color: #fff6f6;
     font-family: 'Montserrat', sans-serif;
     border-radius: 8pt;
     padding: 6pt;
