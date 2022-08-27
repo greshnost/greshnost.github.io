@@ -86,8 +86,8 @@
   border-radius: 100%;
   inset: 0;
   background: conic-gradient(var(--c) calc(var(--p)*1%),#0000 0);
-  -webkit-mask:radial-gradient(farthest-side,#000 calc(var(--r)),#0000 calc(var(--r)));
-  mask:radial-gradient(farthest-side,#000 calc(var(--r)),#0000 calc(var(--r)));
+  -webkit-mask:radial-gradient(farthest-side,#000 calc(-1% + var(--r)),#0000 calc(var(--r)));
+  mask:radial-gradient(farthest-side,#000 calc(-1% + var(--r)),#0000 calc(var(--r)));
   transform: rotate(calc(var(--num) * 51.4285714deg));
 
 
