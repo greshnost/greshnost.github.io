@@ -36,7 +36,7 @@ for (var i = 0; i <= 6; i++) {
     var color = colorsList[i];
     var radius = radiusList[i];
     innerel = document.getElementById(i);
-    innerel.style = `--num:${i};--c:${color};--r:${radius * 2.55}px`;
+    innerel.style = `--num:${i};--c:${color};--r:${radius * 2.6}px`;
 }
 // Нарисовать красивые штучки
 for (var i = 7; i <= 10; i++) {
