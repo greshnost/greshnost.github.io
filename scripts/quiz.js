@@ -49,11 +49,8 @@
         desp_array[qn]      = mult*questions[qn].effect.desp
         envy_array[qn]      = mult*questions[qn].effect.envy
         qn++;
-        if (qn < questions.length) {
-            init_question();
-        } else {
-            results();
-        }
+        if (qn < questions.length) {init_question();} 
+        else {results();}
     }
 
     function prev_question() {
@@ -87,4 +84,6 @@
             + `&desp=${calc_score(final_desp,max_desp)}`
             + `&envy=${calc_score(final_envy,max_envy)}`
         location.href = results
+        console.log(results)
+
     }

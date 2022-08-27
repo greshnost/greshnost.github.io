@@ -1,4 +1,4 @@
-// Поиск результатов через ссылку 
+// Поиск результатов через ссылку
 function getQueryVariable(variable){
     var query = window.location.search.substring(1)
     var vars = query.split("&")
@@ -36,7 +36,7 @@ for (var i = 0; i <= 6; i++) {
     var color = colorsList[i];
     var radius = radiusList[i];
     innerel = document.getElementById(i);
-    innerel.style = `--num:${i};--c:${color};--r:${radius * 2.55}px`;
+    innerel.style = `--num:${i};--c:${color};--r:${radius * 2.53}px`;
 }
 // Нарисовать красивые штучки
 for (var i = 7; i <= 10; i++) {
@@ -45,7 +45,7 @@ for (var i = 7; i <= 10; i++) {
     innerel = document.getElementById(i);
     innerel.style = `--r:${radius}px;margin-left: ${margin}px;margin-top: ${margin}px;`;
 }
-// Подписать пирог 
+// Подписать пирог
 const sins = [" Гордыня ", "Чревоугодие", "    Блуд   ", "Гнев ", "  Алчность   ", "Уныние  ", " Зависть"]
 var degree = 0;
 sins.forEach(element => {
@@ -62,7 +62,7 @@ sins.forEach(element => {
 
 // Общий результат
 total_result = Math.floor(radiusList.reduce((a, b) => +(a) + +(b), 0) / 700 * 100);
-if      (total_result < 25) {total = "Поздравляем выособо негрешный"} 
+if      (total_result < 25) {total = "Поздравляем выособо негрешный"}
 else if (total_result < 50) {total = "Вы немножечька грешный вам предстоить пороботать надсобой индульгенцию покашто можно непокупать"}
 else if (total_result < 75) {total = "Вы в целом грешьный незабуьте купить индугенцию"}
 else if (total_result < 85) {total = "Вы грешный человек. От мук в аду вас сможет спасти лишь покупка индульгенции"}

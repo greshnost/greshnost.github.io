@@ -46,7 +46,7 @@
   box-shadow: 0px 0px 8px rgba(0.5,0.5,0.5,0.5);
   transform: rotate(calc(var(--num) * 51.4285714deg + 90deg));
   width: 510px;
-  margin: 255 0;
+  margin-top: 255px;
   aspect-ratio:1;
   place-content:center;
   position: absolute;
