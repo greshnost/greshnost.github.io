@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
 <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Roboto:400,700" rel="stylesheet">
 <link href='styles/style.css' rel='stylesheet' type='text/css'>
@@ -10,12 +9,10 @@
 <meta charset="utf-8">
 <title>Тест на грешность</title>
 </head>
-
 <body>
 <h1>Тест нагрешность</h1><hr>
 <h2 style="text-align:center;" id="question-number">Номер вопроса</h2>
 <p class="question" id="question-text">Загрузка</p>
-
 <button class="button stronglyAgree" onclick="next_question(1.0)">Согл</button> <br>
 <button class="button agree" onclick="next_question(0.75)">Мб</button> <br>
 <button class="button neutral" onclick="next_question( 0.5)">Хз</button> <br>
@@ -23,10 +20,7 @@
 <button class="button stronglyDisagree" onclick="next_question(0.0)">Пошёл нахуй</button> <br>
 <button class="small_button" onclick="prev_question()" id="back_button">Назад</button>
 <button class="small_button_off" id="back_button_off">Назад</button><br>
-
-</body>
-
 <script src="scripts/questions.js" type="application/javascript"></script>
 <script src="scripts/quiz.js" type="application/javascript"></script>
-
+</body>
 </html>

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
 <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Roboto:400,700" rel="stylesheet">
 <link href='styles/style.css' rel='stylesheet' type='text/css'>
@@ -11,18 +10,13 @@
 <meta charset="utf-8">
 <title>Тест на грешность результаты</title>
 </head>
-
 <body>
 <h1>Тест на грешность </h1>
 <hr>
-
 <h1>Результаты</h1>
-
 <h2 style="text-align: center;margin-top: 50px;">Диаграмма:</h2>
-
-<div class="disk", id="disk">
-    <div class="pieContainer", style="--h:500px;">
-        
+<div class="disk" id="disk">
+    <div class="pieContainer" style="--h:500px;">
         <div class="pieBackground"></div>
         <div class="pie"  id="0"></div>
         <div class="pie"  id="1"></div>
@@ -31,7 +25,6 @@
         <div class="pie"  id="4"></div>
         <div class="pie"  id="5"></div>
         <div class="pie"  id="6"></div>
-
         <div class="line" style="--num:0"></div>
         <div class="line" style="--num:1"></div>
         <div class="line" style="--num:2"></div>
@@ -39,12 +32,10 @@
         <div class="line" style="--num:4"></div>
         <div class="line" style="--num:5"></div>
         <div class="line" style="--num:6"></div>
-
         <div class="pieBackground" id="7"></div>
         <div class="pieBackground" id="8"></div>
         <div class="pieBackground" id="9"></div>
         <div class="pieBackground" id="10"></div>
-    
     </div>  
 </div>
 <h2 style="text-align: center;margin-top: 50px;">Цифры:</h2>
@@ -53,23 +44,21 @@
     <div id="glut-label" class="axis_name quadcolumn"></div>
     <div id="forn-label" class="axis_name quadcolumn"></div>
     <div id="anger-label" class="axis_name quadcolumn"></div>
-    <img src="value_images/pride.svg" class="quadcolumn"> 
-    <img src="value_images/glut.svg" class="quadcolumn">
-    <img src="value_images/forn.svg" class="quadcolumn">
-    <img src="value_images/anger.svg" class="quadcolumn"><br>
+    <img src="value_images/pride.svg" class="quadcolumn" alt="pride"> 
+    <img src="value_images/glut.svg" class="quadcolumn" alt="gluttony">
+    <img src="value_images/forn.svg" class="quadcolumn" alt="fornication">
+    <img src="value_images/anger.svg" class="quadcolumn" alt="anger"><br>
     <div id="greed-label" class="axis_name quadcolumn"></div>
     <div id="desp-label" class="axis_name quadcolumn"></div>
     <div id="envy-label" class="axis_name quadcolumn"></div>
     <div></div>
-    <img src="value_images/greed.svg" class="quadcolumn">
-    <img src="value_images/desp.svg" class="quadcolumn">
-    <img src="value_images/envy.svg" class="quadcolumn">
+    <img src="value_images/greed.svg" class="quadcolumn" alt="greed">
+    <img src="value_images/desp.svg" class="quadcolumn" alt="despodency">
+    <img src="value_images/envy.svg" class="quadcolumn" alt="envy">
 </div>
 <h2 style="text-align: center;margin-top: 50px;">Итог:</h2><hr/>
 <div class="center"><h3 id="total"></h3></div><hr/>
 <button class="button" onclick="location.href='index.html';">Уйти</button><br>
-</body>
-
 <script src="scripts/results.js" type="application/javascript"></script>
-
+</body>
 </html>
